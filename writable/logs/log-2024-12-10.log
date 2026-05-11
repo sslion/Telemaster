@@ -1,0 +1,241 @@
+INFO - 2024-12-10 07:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 07:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 11:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-10 12:42:24 --> TypeError: get_class_vars(): Argument #1 ($class) must be a valid class name, {"user":{"id":7747802532,"is_bot":true,"first_name":"Nectar","username":"nectar_tech_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":true,"can_post_messages":true,"can_edit_messages":true,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_promote_members":true,"can_manage_video_chats":true,"can_post_stories":true,"can_edit_stories":true,"can_delete_stories":true,"is_anonymous":false,"can_manage_voice_chats":true} given
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 31.
+ 1 APPPATH\Controllers\HomeController.php(31): get_class_vars()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-10 12:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-10 12:49:09 --> ErrorException: Undefined variable $posts
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 13.
+ 1 APPPATH\Views\welcome_message.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\HomeController.php(35): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-10 12:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-10 12:55:22 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: /]
+in APPPATH\Views\layouts\chanel_admins.php on line 21.
+ 1 APPPATH\Views\layouts\chanel_admins.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\layouts\\chanel_admins.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\HomeController.php(34): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-10 12:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 12:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-10 13:15:03 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists()
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 13:15:30 --> Telegram\Bot\Exceptions\TelegramResponseException: Bad Request: chat_id is empty
+[Method: GET, Route: /]
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(632): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\HomeController.php(31): Telegram\Bot\Api->getChatMember()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 13:15:30 --> [Caused by] Telegram\Bot\Exceptions\TelegramOtherException: Bad Request: chat_id is empty
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(632): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\HomeController.php(31): Telegram\Bot\Api->getChatMember()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-10 13:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 13:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-10 13:57:58 --> [DEPRECATED] end(): Calling end() on an object is deprecated in APPPATH\Controllers\HomeController.php on line 35.
+ 1 APPPATH\Controllers\HomeController.php(35): end(Object(Telegram\Bot\Objects\PhotoSize))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:57:58 --> Error: Call to a member function getFileId() on bool
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+WARNING - 2024-12-10 14:01:37 --> [DEPRECATED] end(): Calling end() on an object is deprecated in APPPATH\Controllers\HomeController.php on line 35.
+ 1 APPPATH\Controllers\HomeController.php(35): end(Object(Telegram\Bot\Objects\PhotoSize))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 14:05:06 --> TypeError: array_pop(): Argument #1 ($array) must be of type array, Telegram\Bot\Objects\PhotoSize given
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 35.
+ 1 APPPATH\Controllers\HomeController.php(35): array_pop()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:06:29 --> TypeError: array_reverse(): Argument #1 ($array) must be of type array, Telegram\Bot\Objects\PhotoSize given
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 35.
+ 1 APPPATH\Controllers\HomeController.php(35): array_reverse()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:09:31 --> ParseError: syntax error, unexpected token ";", expecting ")"
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists()
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:11:14 --> ErrorException: Indirect modification of overloaded element of Telegram\Bot\Objects\ChatMember has no effect
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 41.
+ 1 APPPATH\Controllers\HomeController.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:12:47 --> ErrorException: Indirect modification of overloaded element of Telegram\Bot\Objects\ChatMember has no effect
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 41.
+ 1 APPPATH\Controllers\HomeController.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:14:54 --> ErrorException: Undefined array key 0
+[Method: GET, Route: /]
+in VENDORPATH\illuminate\collections\Collection.php on line 1792.
+ 1 VENDORPATH\illuminate\collections\Collection.php(1792): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\HomeController.php(34): Illuminate\Support\Collection->offsetGet()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:16:33 --> ErrorException: Undefined array key 0
+[Method: GET, Route: /]
+in VENDORPATH\illuminate\collections\Collection.php on line 1792.
+ 1 VENDORPATH\illuminate\collections\Collection.php(1792): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Controllers\HomeController.php(35): Illuminate\Support\Collection->offsetGet()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-10 14:18:10 --> ParseError: syntax error, unexpected token "}", expecting "," or ";"
+[Method: GET, Route: /]
+in APPPATH\Controllers\HomeController.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists()
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-10 14:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 14:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-10 15:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

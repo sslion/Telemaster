@@ -1,0 +1,214 @@
+*,
+html * /* override x.xhtml.ru style */
+{
+    scrollbar-width: thin;
+    scrollbar-color: #040490 #acbdff;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+    height: 12px;
+    width: 6px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+    background: #acbdff;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+    background-color: #040490;
+    border-radius: 5px;
+    border: 1px solid #acbdff;
+}
+
+
+    /* Для диалоговых окон */
+.form-label {
+    display: inline-block;
+    font-weight: 600;
+    width: 150px;
+}
+.form-input_text {
+    display: inline-block;
+    border: 1px solid #0000ff;
+    border-radius: 5px;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.form-input_text.error {
+    border: 1px solid red;
+}
+.fancydialog-title {
+    width: 100%;
+    background-color: #3c8dbc;
+    color: #ffff;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.fancyinner{
+    padding: 15px;
+}
+
+/* Для диалоговых окон */
+.circle-button {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-top: -10px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+/* Forms */
+.form-label {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    width: 150px;
+    text-shadow: 1px 1px 2px black;
+}
+
+input.form-input_text:hover, input.form-input_text:focus {
+    box-shadow: 0.2em 0.2em 4px rgba(122, 122, 122, 0.5) !important;
+    outline: none;
+}
+
+.fancydialog-title {
+    width: 100%;
+    background-color: #3c8dbc;
+    color: #ffff;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fancyinner {
+    padding: 15px;
+}
+
+.fancybox-content {
+    background-image: url('../img/form_bg2.png');
+    background-size: cover;
+    padding: 0px;
+    overflow: unset;
+}
+.fancybox-bg {
+    opacity: .5;
+}
+.fancybox-close-small {
+    color: white !important;
+}
+
+/* Таблицы */
+    .item-tr {
+        cursor: default;
+    }
+
+    .unreaded-marker {
+        font-size: 12px;
+        color: blue;
+    }
+
+    .unreaded-marker i {
+        cursor: pointer;
+    }
+
+    .action-col {
+        width: 10px;
+        padding-right: 10px !important;
+        text-align: end;
+        white-space: nowrap;
+    }
+
+    .action-icon-button {
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        line-height: 21px;
+        border: 0;
+        border-radius: 14px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .action-icon-button:hover {
+        background-color: #bbb;
+    }
+
+    .action-icon-remove {
+        color: red !important;
+    }
+    .action-icon-edit {
+        color: blue !important;
+    }
+
+    .bg_image {
+        background-size: cover;
+        padding: 0;
+        overflow: unset;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .bg_image1 {
+        background-image: url(../../images/bg1.jpg);
+    }
+
+    .bg_image2 {
+        background-image: url(../../images/bg2.jpg);
+    }
+
+    .bg_image3 {
+        background-image: url(../../images/bg3.jpg);
+    }
+
+    .bg_gradient {
+        background: linear-gradient(45deg, #300bfc38, #C5DDE8);
+    }
+
+/* Пагинация */
+    .pagination {
+        float: right;
+        margin-top: 10px;
+    }
+    .pagination li a {
+        display: inline-block;
+        height: 28px;
+        padding-right: 10px;
+        padding-left: 10px;
+        line-height: 24px;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .pagination li a:hover {
+        border: 1px solid #e9e9f8;
+        background-color: #e9e9f8;
+    }
+
+    .pagination li.active  a{
+        border: 1px solid #e9e9f8;
+        background-color: #adadff;
+        color: white;
+    }
+
+    /* Dashboard */
+    .dashboard-logo {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+    /* Dashboard */

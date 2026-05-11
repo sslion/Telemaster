@@ -1,0 +1,388 @@
+INFO - 2024-12-21 17:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-21 17:42:46 --> ParseError: syntax error, unexpected token "=>"
+[Method: GET, Route: manager/dashboard]
+in APPPATH\Views\layouts\admin_menu.php on line 3.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH\Views\templates\adminlte\index.php(138): view()
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\templates\\adminlte\\index.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 7 APPPATH\Controllers\BaseController.php(104): view()
+ 8 APPPATH\Controllers\Manager\MainController.php(65): App\Controllers\BaseController->render()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-21 17:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-21 17:51:44 --> mysqli_sql_exception: Table 'telebot_db.menus' doesn't exist in C:\OSPanel\domains\telebot.loc\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\OSPanel\domains\telebot.loc\system\Database\MySQLi\Connection.php(312): mysqli->query()
+#1 C:\OSPanel\domains\telebot.loc\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\OSPanel\domains\telebot.loc\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\OSPanel\domains\telebot.loc\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 C:\OSPanel\domains\telebot.loc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\OSPanel\domains\telebot.loc\system\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 C:\OSPanel\domains\telebot.loc\app\Models\MenuModel.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\OSPanel\domains\telebot.loc\app\Views\layouts\navbar_admin_dropdown.php(4): App\Models\MenuModel->getMenus()
+#8 C:\OSPanel\domains\telebot.loc\system\View\View.php(234): include('C:\\OSPanel\\doma...')
+#9 C:\OSPanel\domains\telebot.loc\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 C:\OSPanel\domains\telebot.loc\system\Common.php(1171): CodeIgniter\View\View->render()
+#11 C:\OSPanel\domains\telebot.loc\app\Views\templates\adminlte\index.php(65): view()
+#12 C:\OSPanel\domains\telebot.loc\system\View\View.php(234): include('C:\\OSPanel\\doma...')
+#13 C:\OSPanel\domains\telebot.loc\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#14 C:\OSPanel\domains\telebot.loc\system\Common.php(1171): CodeIgniter\View\View->render()
+#15 C:\OSPanel\domains\telebot.loc\app\Controllers\BaseController.php(104): view()
+#16 C:\OSPanel\domains\telebot.loc\app\Controllers\Manager\MainController.php(65): App\Controllers\BaseController->render()
+#17 C:\OSPanel\domains\telebot.loc\system\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+#18 C:\OSPanel\domains\telebot.loc\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#19 C:\OSPanel\domains\telebot.loc\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#20 C:\OSPanel\domains\telebot.loc\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#21 C:\OSPanel\domains\telebot.loc\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#22 C:\OSPanel\domains\telebot.loc\public\index.php(56): CodeIgniter\Boot::bootWeb()
+#23 {main}
+CRITICAL - 2024-12-21 17:51:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'telebot_db.menus' doesn't exist
+[Method: GET, Route: manager/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH\Models\MenuModel.php(11): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Views\layouts\navbar_admin_dropdown.php(4): App\Models\MenuModel->getMenus()
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\layouts\\navbar_admin_dropdown.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 9 APPPATH\Views\templates\adminlte\index.php(65): view()
+10 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\templates\\adminlte\\index.php')
+11 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+13 APPPATH\Controllers\BaseController.php(104): view()
+14 APPPATH\Controllers\Manager\MainController.php(65): App\Controllers\BaseController->render()
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+16 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+17 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+18 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 17:51:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'telebot_db.menus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH\Models\MenuModel.php(11): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Views\layouts\navbar_admin_dropdown.php(4): App\Models\MenuModel->getMenus()
+ 8 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\layouts\\navbar_admin_dropdown.php')
+ 9 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+11 APPPATH\Views\templates\adminlte\index.php(65): view()
+12 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\templates\\adminlte\\index.php')
+13 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+15 APPPATH\Controllers\BaseController.php(104): view()
+16 APPPATH\Controllers\Manager\MainController.php(65): App\Controllers\BaseController->render()
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+18 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+19 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+20 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 17:51:44 --> [Caused by] mysqli_sql_exception: Table 'telebot_db.menus' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH\Models\MenuModel.php(11): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Views\layouts\navbar_admin_dropdown.php(4): App\Models\MenuModel->getMenus()
+ 9 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\layouts\\navbar_admin_dropdown.php')
+10 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+12 APPPATH\Views\templates\adminlte\index.php(65): view()
+13 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\templates\\adminlte\\index.php')
+14 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+16 APPPATH\Controllers\BaseController.php(104): view()
+17 APPPATH\Controllers\Manager\MainController.php(65): App\Controllers\BaseController->render()
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+19 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+21 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+23 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-21 17:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-21 17:52:58 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: manager/dashboard]
+in APPPATH\Views\layouts\navbar_admin_dropdown.php on line 10.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH\Views\templates\adminlte\index.php(65): view()
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\templates\\adminlte\\index.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 8 APPPATH\Controllers\BaseController.php(104): view()
+ 9 APPPATH\Controllers\Manager\MainController.php(65): App\Controllers\BaseController->render()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-21 17:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 17:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 18:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-21 19:01:03 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: manager/channels]
+in APPPATH\Controllers\Manager\ChannelsController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\ChannelsController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 19:01:37 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: manager/dashboard]
+in APPPATH\Controllers\Manager\MainController.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 19:03:36 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: manager/dashboard]
+in APPPATH\Controllers\Manager\MainController.php on line 54.
+ 1 APPPATH\Controllers\Manager\MainController.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 19:04:10 --> Telegram\Bot\Exceptions\TelegramResponseException: Bad Request: chat not found
+[Method: GET, Route: manager/dashboard]
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(613): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\Manager\MainController.php(54): Telegram\Bot\Api->getChatMemberCount()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 19:04:10 --> [Caused by] Telegram\Bot\Exceptions\TelegramOtherException: Bad Request: chat not found
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(613): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\Manager\MainController.php(54): Telegram\Bot\Api->getChatMemberCount()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 19:06:33 --> Telegram\Bot\Exceptions\TelegramResponseException: Bad Request: chat not found
+[Method: GET, Route: manager/dashboard]
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(613): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\Manager\MainController.php(56): Telegram\Bot\Api->getChatMemberCount()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 19:06:33 --> [Caused by] Telegram\Bot\Exceptions\TelegramOtherException: Bad Request: chat not found
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(613): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\Manager\MainController.php(56): Telegram\Bot\Api->getChatMemberCount()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-21 19:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-21 19:12:55 --> ErrorException: Undefined variable $channels
+[Method: GET, Route: manager/dashboard]
+in APPPATH\Views\layouts\channels_card.php on line 5.
+ 1 APPPATH\Views\layouts\channels_card.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\layouts\\channels_card.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH\Controllers\Manager\MainController.php(62): view()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\MainController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-21 19:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 19:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-21 22:37:35 --> Telegram\Bot\Exceptions\TelegramResponseException: Bad Request: chat not found
+[Method: GET, Route: manager/channels]
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(613): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\Manager\ChannelsController.php(24): Telegram\Bot\Api->getChatMemberCount()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\ChannelsController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 22:37:35 --> [Caused by] Telegram\Bot\Exceptions\TelegramOtherException: Bad Request: chat not found
+in VENDORPATH\irazasyed\telegram-bot-sdk\src\Exceptions\TelegramResponseException.php on line 59.
+ 1 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(96): Telegram\Bot\Exceptions\TelegramResponseException::create()
+ 2 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(79): Telegram\Bot\TelegramResponse->makeException()
+ 3 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramResponse.php(49): Telegram\Bot\TelegramResponse->decodeBody()
+ 4 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(122): Telegram\Bot\TelegramResponse->__construct()
+ 5 VENDORPATH\irazasyed\telegram-bot-sdk\src\TelegramClient.php(50): Telegram\Bot\TelegramClient->getResponse()
+ 6 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(152): Telegram\Bot\TelegramClient->sendRequest()
+ 7 VENDORPATH\irazasyed\telegram-bot-sdk\src\Traits\Http.php(128): Telegram\Bot\Api->sendRequest()
+ 8 VENDORPATH\irazasyed\telegram-bot-sdk\src\Methods\Chat.php(613): Telegram\Bot\Api->get()
+ 9 APPPATH\Controllers\Manager\ChannelsController.php(24): Telegram\Bot\Api->getChatMemberCount()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\ChannelsController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-21 22:44:06 --> ErrorException: Undefined array key "subscribers"
+[Method: GET, Route: manager/channels]
+in VENDORPATH\illuminate\collections\Collection.php on line 1792.
+ 1 VENDORPATH\illuminate\collections\Collection.php(1792): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\channels.php(34): Illuminate\Support\Collection->offsetGet()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\OSPanel\\domains\\telebot.loc\\app\\Views\\channels.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\Manager\ChannelsController.php(43): view()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Manager\ChannelsController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-21 22:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 22:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-21 23:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
